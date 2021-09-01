@@ -1,12 +1,9 @@
-import Layout from "./../../components/Layout";
+import Layout from "./../../react-components/Layout/Layout";
 
-/* import {} from "./../react-icons/Icons"; */
 
 export default function About({res}) {
   return (
-    <Layout
-    title=""
-    >
+    <Layout title="ola" childrenMargin="20%" >
 <Content 
   res={res}
 />
