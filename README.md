@@ -9,6 +9,12 @@
 npm i 
 ```
 
+## Environment variables
+
+``` dotenv
+NEXT_PUBLIC_HOST=
+```
+
 ## Resources
 
 [Template Next Basic](https://github.com/Rick-torrellas/template-next-basic)

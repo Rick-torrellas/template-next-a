@@ -1,6 +1,7 @@
 import Layout from "./../react-components/Layaout/Layout";
 import axios from "axios";
 import { _Sample } from "./../react-components/icons/react-bootstrap";
+import config from "./../config";
 
 export default function Home({ res }) {
   return (
@@ -13,7 +14,6 @@ function Content({ res }) {
 
   return (
     <>
-        <p>{process.env.NEXT_PUBLIC_TEST}</p>
       <_Sample width="5%" />
       {res.map((Res, i) => {
         return <p key={i}>{Res.name}</p>
@@ -23,7 +23,7 @@ function Content({ res }) {
 }
 
 export async function getServerSideProps() {
-  const res = await axios.get("http://localhost:3000/api/data/home");
+  const res = await axios.get(`${config.host}/api/data/home`);
   return {
     props: { res: res.data },
   };
