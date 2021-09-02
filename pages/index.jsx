@@ -13,8 +13,7 @@ function Content({ res }) {
 
   return (
     <>
-    <p>ola</p>
-        <p>{process.env.TEST}</p>
+        <p>{process.env.NEXT_PUBLIC_TEST}</p>
       <_Sample width="5%" />
       {res.map((Res, i) => {
         return <p key={i}>{Res.name}</p>
