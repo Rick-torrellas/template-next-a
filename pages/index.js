@@ -1,6 +1,6 @@
-import Layout from "./../react-components/Layaout/Layout";
+import Layout from "./../components/Layout";
 import axios from "axios";
-import { _Sample } from "./../react-components/icons/react-bootstrap";
+import { _Sample } from "./../lib/icons/react-bootstrap";
 import config from "./../config";
 
 export default function Home({ res }) {
