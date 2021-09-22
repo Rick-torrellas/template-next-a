@@ -6,7 +6,7 @@ import config from "./../config";
 export default function Home({ res }) {
   return (
     <Layout title="" >
-      <Content res={res} />
+      <Content data-testid="content" res={res} />
     </Layout>
   );
 }
@@ -16,7 +16,7 @@ function Content({ res }) {
     <>
       <_Sample width="5%" />
       {res.map((Res, i) => {
-        return <p key={i}>{Res.name}</p>
+        return <p key={i} >{Res.name}</p>
       })}
     </>
   );
